@@ -1,0 +1,290 @@
+/* Theme name: Julo | Author: Makarov Arseniy | Author URL: # */
+
+/*=============================================================================================== 
+.: LICENSES :. 
+===============================================================================================*/
+
+/*
+ * @license
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: 
+ * URL: 
+ * Copyright: 
+ * Licensed pageviews: 
+ * 
+ * 
+*/
+
+/*================================================================================================ 
+.: GLOBAL :. 
+================================================================================================*/
+
+/* звездочка выбирает все элементы в документе и задает им указанные свойства = типичный css reset*/
+* {
+	/* свойство задает объекту его изначальные размеры, не обращая внимания на рамки и отступы*/
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0; 
+}	
+
+html, body {
+	background-color: #ffffff;
+	
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+
+	overflow-x: hidden;
+	overflow-y: hidden;
+	z-index: 0;
+}	
+
+body {
+	height: 100vh;
+	width: 96%;
+	margin: 0px auto;
+}
+
+div {}
+
+row {}
+
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.wrapper {
+	width: 100%;
+	position: relative;
+	margin-top: 2%;
+}
+
+.inner__wrapper {
+	background-color: #546eb7;
+
+	width: inherit;
+	height: 93vh;
+	margin-bottom: 10px;
+	position: absolute;
+	z-index: 1;
+}
+
+.text {
+	font-size: 2rem;
+	color: white;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+/*================================================================================================ 
+.: UP :. 
+=================================================================================================*/
+
+.up__row {
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px; 
+    margin-right: 0px; 
+}
+
+.logo {
+	margin-top: 15%;
+	z-index: 4;
+}
+
+.logo img {
+	height: 2.2em;
+} 
+
+#logo1 {
+	display: none;
+}
+
+.page__name {
+	text-align: center;
+	font-size: 1.7rem;
+	font-weight: 300;
+	margin-top: 5%;
+	color: white;
+}
+
+.crossburger {
+	margin-top: 15%;
+}
+
+#crossburger {	
+	width: 45px;
+	height: 30px;
+	position: fixed;
+	right: 113px;
+
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: transform .6s ease-in-out;
+	-moz-transition: transform .6s ease-in-out;
+	-o-transition: transform .6s ease-in-out;
+	transition: transform .6s ease-in-out;
+
+	cursor:pointer;
+	z-index: 300;
+}
+
+#crossburger span {
+	display: block;
+	position: absolute;
+	height: 4px;
+	width: 44%;
+
+	background: #ffffff;
+
+	opacity: 1;
+	z-index: 400;
+
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: transform .25s ease-in-out;
+	-moz-transition: transform .25s ease-in-out;
+	-o-transition: transform .25s ease-in-out;
+	transition: transform .25s ease-in-out;
+}
+
+#crossburger span:nth-child(even) {
+  left: 30%;
+}
+
+#crossburger span:nth-child(odd) {
+  left: 0px;
+}
+
+#crossburger span:nth-child(1), #crossburger span:nth-child(2) {
+  top: 5px;
+}
+
+#crossburger span:nth-child(3), #crossburger span:nth-child(4) {
+  top: 13px;
+}
+
+#crossburger span:nth-child(5), #crossburger span:nth-child(6) {
+  top: 21px;
+}
+
+#crossburger.open span:nth-child(1),#crossburger.open span:nth-child(6) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#crossburger.open span:nth-child(2),#crossburger.open span:nth-child(5) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#crossburger.open span:nth-child(1) {}
+
+#crossburger.open span:nth-child(2) {
+/*   left: calc(50% - 5px);
+  top: 7px; */
+}
+
+#crossburger.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+#crossburger.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+#crossburger.open span:nth-child(5) {
+/*   left: 5px; */
+  top: 19px;
+}
+
+#crossburger.open span:nth-child(6) {
+/*   left: calc(50% - 5px); */
+  top: 19px;
+}
+
+#crossburger.open span {
+	background-color: #1a3380 !important;
+
+	-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s; 
+	-o-transition: background 0.2s;
+	transition: background 0.2s;
+
+	z-index: 4;
+}
+
+/*================================================================================================ 
+.: MENU :. 
+=================================================================================================*/
+
+.main__menu {
+	padding: 0px;
+    background-color: #ffffff;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+	z-index: 0;
+}
+
+.main__menu ul {
+	position: absolute;
+    width: 96vw;
+    margin-top: 13%;
+}
+
+.menu__item {
+	width: 100%;
+	height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.menu__item a {
+	font-size: 30px;
+	color: #5c76c1;
+}
+
+.menu__item:hover, 
+.menu__item:hover a {
+	text-decoration: none;
+	color: #26449b;
+}
+
+.menu__link {
+	display: inline-block;
+  	line-height: normal;
+	text-decoration: none;
+	color: #141b26;
+	padding: 20px;
+}
+
+.menu__link:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+/*================================================================================================ 
+.:. 
+=================================================================================================*/

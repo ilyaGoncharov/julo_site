@@ -1,0 +1,11 @@
+<svg version="1.1" id="menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 32 32">
+	<style type="text/css">
+		
+		.st0 {
+			fill:#EFF2F7;
+		}
+
+	</style>
+	<rect id="upper" y="12" class="st0" width="32" height="2"/>
+	<rect id="lower" y="18" class="st0" width="32" height="2"/>
+</svg>
