@@ -22,15 +22,15 @@
 ================================================================================================*/
 
 /* звездочка выбирает все элементы в документе и задает им указанные свойства = типичный css reset*/
-* {
+*, *:before, *:after {
 	/* свойство задает объекту его изначальные размеры, не обращая внимания на рамки и отступы*/
-	box-sizing: border-box;
 	padding: 0;
 	margin: 0; 
+	box-sizing: border-box;
 }	
 
 html, body {
-	background-color: #ffffff;
+	background-color: #546eb7;
 	
 	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
@@ -56,20 +56,51 @@ ul {
 	padding: 0px;
 }
 
+#top, 
+#bottom, 
+#left, 
+#right {
+	background: white;
+	position: fixed;
+	}
+
+#left, 
+#right {
+	top: 0; bottom: 0;
+	width: 20px;
+}
+
+#left { 
+	left: 0; 
+}
+
+#right { 
+	right: 0; 
+}
+		
+#top, 
+#bottom {
+	left: 0; right: 0;
+	height: 20px;
+}
+
+#top { 
+	top: 0; 
+}
+
+#bottom { 
+	bottom: 0; 
+}
+
 .wrapper {
 	width: 100%;
 	position: relative;
 	margin-top: 2%;
+	z-index: 0;
 }
 
 .inner__wrapper {
-	background-color: #546eb7;
 
-	width: inherit;
-	height: 93vh;
-	margin-bottom: 10px;
-	position: absolute;
-	z-index: 1;
 }
 
 .text {
@@ -95,7 +126,7 @@ ul {
 }
 
 .logo {
-	margin-top: 15%;
+	margin-top: 50px;
 	z-index: 4;
 }
 
@@ -111,12 +142,12 @@ ul {
 	text-align: center;
 	font-size: 1.7rem;
 	font-weight: 300;
-	margin-top: 5%;
+	margin-top: 50px;
 	color: white;
 }
 
 .crossburger {
-	margin-top: 15%;
+	margin-top: 50px;
 }
 
 #crossburger {	
@@ -243,14 +274,14 @@ ul {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 92.8vh;
 	z-index: 0;
 }
 
 .main__menu ul {
 	position: absolute;
     width: 96vw;
-    margin-top: 13%;
+    margin-top: 15.5%;
 }
 
 .menu__item {
@@ -288,3 +319,20 @@ ul {
 /*================================================================================================ 
 .:. 
 =================================================================================================*/
+
+
+/*================================================================================================ 
+Q U E R I E S
+=================================================================================================*/
+
+@media 
+
+/* Fairly small screens including iphones */
+only screen and (max-width: 500px),
+
+/* iPads */
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+
+{
+	#top, #bottom, #left, #right { display: none; }
+}

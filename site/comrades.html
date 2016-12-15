@@ -34,6 +34,10 @@
 	<!-- <link rel="icon" type="image/png" href="http:// ./img/favicon-16x16.png" sizes="16x16"/>
     <link rel="icon" type="image/png" href="http:// ./img/favicon-32x32.png" sizes="32x32"/> -->
 
+    <!--[if lte IE 6]>
+	<style>#top, #bottom, #left, #right { display: none; }</style>
+	<![endif]-->
+
     <!--[if lt IE 7]>
         <p class="browsehappy">Вы используете <strong> очень устаревшую </strong> версию браузера. Пожалуйста <a href="http://browsehappy.com/"> обновите его</a>, чтобы улучшить свою производительность в сети</p>
     <![endif]-->
@@ -50,107 +54,97 @@
 	<div class="wrapper">
 		<div id="inner__wrapper" class="inner__wrapper">
 			<section class="container up__row col-lg-12"> 
-				<div class="row">
-					<div id="menu" class="main__menu">
-						<ul>
-					       <li class="menu__item"> <a href="portfolio.html" class="btn menu__link"> Портфолио </a> </li>
-						   <li class="menu__item"> <a href="contacts.html" class="btn menu__link"> Контакты </a> </li>
-						   <li class="menu__item"> <a href="comrades.html" class="btn menu__link"> Команда </a> </li>
-					    </ul>
-					</div>
+					<div class="row">
+						<div id="menu" class="main__menu">
+							<ul>
+						       <li class="menu__item"> <a href="portfolio.html" class="btn menu__link"> Портфолио </a> </li>
+							   <li class="menu__item"> <a href="contacts.html" class="btn menu__link"> Контакты </a> </li>
+							   <li class="menu__item"> <a href="comrades.html" class="btn menu__link"> Команда </a> </li>
+						    </ul>
+						</div>
 
-					<div class="col-lg-1 col-md-1 col-sm-1"></div>
+						<div class="col-lg-1 col-md-1 col-sm-1"></div>
 
-					<div class="col-lg-2 col-md-3 col-sm-3 сol-xs-3">
-						<a href="index.html" class="logo col-lg-1 col-md-2 col-sm-12 ">
-							<img id="logo0" src="img/logo_julo_light.svg" alt="[ J U L O ]">
-							<img id="logo1" src="img/logo_blue.svg" alt="[ J U L O ]">
-						</a>
-					</div>
+						<div class="col-lg-2 col-md-3 col-sm-3 сol-xs-3">
+							<a href="index.html" class="logo col-lg-1 col-md-2 col-sm-12 ">
+								<img id="logo0" src="img/logo_julo_light.svg" alt="[ J U L O ]">
+								<img id="logo1" src="img/logo_blue.svg" alt="[ J U L O ]">
+							</a>
+						</div>
 
-					<div class="col-lg-6 col-md-3 col-sm-3 сol-xs-3">
-						<p class="page__name">Команда</p>
+						<div class="col-lg-6 col-md-3 col-sm-3 сol-xs-3">
+							<p class="page__name">Команда</p>
+						</div>
+						
+						<div class="col-lg-2 col-md-3 col-sm-3 сol-xs-3">
+							<div class="crossburger col-lg-1 col-md-2 col-sm-2" onclick="show(menu)">
+							<div id="crossburger">
+							  <span></span>
+							  <span></span>
+							  <span></span>
+							  <span></span>
+							  <span></span>
+							  <span></span>
+							</div>	
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1"></div>
+						</div>
 					</div>
-					
-					<div class="col-lg-2 col-md-3 col-sm-3 сol-xs-3">
-						<div class="crossburger col-lg-1 col-md-2 col-sm-2" onclick="show(menu)">
-						<div id="crossburger">
-						  <span></span>
-						  <span></span>
-						  <span></span>
-						  <span></span>
-						  <span></span>
-						  <span></span>
-						</div>	
-					</div>
-					<div class="col-lg-1 col-md-1 col-sm-1"></div>
-					</div>
-				</div>
 			</section>
-
-			<section class="container col-lg-12">
-
-				<div class="col-lg-12 col-md-10 col-sm-10 comrade__rirst--row">
-					<div class="col-lg-15 col-md-15 col-sm-3">
-						<div class="comrade__cases">
-							<!-- <object type="image/svg+xml" data="img/face/cave-spider-face.png" class="comrade__imgs">
-							</object> -->
-							<img src="img/face/cave-spider-face.png" class="comrade__imgs" alt="face">
-							<div class="position">
-							    <h4>Иллиос фон Гочарович VIII</h4>
-							    <p>full-stack devepoler</p>
-							 </div>
+			<section class="container-fluid">
+				<div class="row">
+					<div class="row comrade__rirst--row">
+						<div class="col-md-2 col-md-offset-1 comrade__cases">
+								<!-- <object type="image/svg+xml" data="img/face/cave-spider-face.png" class="comrade__imgs">
+								</object> -->
+								<img src="img/face/cave-spider-face.png" class="comrade__imgs" alt="face">
+								<div class="position">
+								    <h4>Мистер Андерсон</h4>
+								    <p>Клерк</p>
+								</div>
 						</div>
-					</div>
-					<div class="col-lg-15 col-md-15 col-sm-3">
-						<div class="comrade__cases">
-							<!-- <object type="image/svg+xml" data="img/" class="comrade__imgs">
-							</object>
-							<div class="caption">
-							    <h4>MGIMO</h4>
-							    <p>"Лучшие люди России"</p>
-							    <a class="btn" href="#" title="View More">Посмотреть</a>
-							 </div> -->
+						<div class="col-md-2 comrade__cases">
+								<!-- <object type="image/svg+xml" data="img/" class="comrade__imgs">
+								</object>
+								<div class="caption">
+								    <h4>MGIMO</h4>
+								    <p>"Лучшие люди России"</p>
+								    <a class="btn" href="#" title="View More">Посмотреть</a>
+								 </div> -->
 						</div>
-					</div>
-					<div class="col-lg-15 col-md-15 col-sm-3">
-						<div class="comrade__cases">
-							<!-- <object type="image/svg+xml" data="img/" class="comrade__imgs">
-							</object>
-							<div class="caption">
-							    <h4>Сайт Милякова</h4>
-							    <p>"Лучший сайт России"</p>
-							    <a class="btn" href="#" title="View More">Посмотреть</a>
-							 </div> -->
+						<div class="col-md-2 comrade__cases">
+								<!-- <object type="image/svg+xml" data="img/" class="comrade__imgs">
+								</object>
+								<div class="caption">
+								    <h4>Сайт Милякова</h4>
+								    <p>"Лучший сайт России"</p>
+								    <a class="btn" href="#" title="View More">Посмотреть</a>
+								 </div> -->
 						</div>
-					</div>
-					<div class="col-lg-15 col-md-15 col-sm-3">
-						<div class="comrade__cases">
-							<!-- <object type="image/svg+xml" data="img/" class="comrade__imgs">
-							</object>
-							 <div class="caption">
-							    <h4>Сайт Милякова</h4>
-							    <p>"Лучший сайт России"</p>
-							    <a class="btn" href="#" title="View More">Посмотреть</a>
-							 </div> -->
+						<div class="col-md-2 comrade__cases">
+								<!-- <object type="image/svg+xml" data="img/" class="comrade__imgs">
+								</object>
+								 <div class="caption">
+								    <h4>Сайт Милякова</h4>
+								    <p>"Лучший сайт России"</p>
+								    <a class="btn" href="#" title="View More">Посмотреть</a>
+								 </div> -->
 						</div>
-					</div>
-					<div class="col-lg-15 col-md-15 col-sm-3">
-						<div class="comrade__cases">
-							<!-- <object type="image/svg+xml" data="img/" class="comrade__imgs">
-							</object>
-							 <div class="caption">
-							    <h4>Сайт Милякова</h4>
-							    <p>"Лучший сайт России"</p>
-							    <a class="btn" href="#" title="View More">Посмотреть</a>
-							 </div>		 -->							
+						<div class="col-md-2 comrade__cases">
+								<!-- <object type="image/svg+xml" data="img/" class="comrade__imgs">
+								</object>
+								 <div class="caption">
+								    <h4>Сайт Милякова</h4>
+								    <p>"Лучший сайт России"</p>
+								    <a class="btn" href="#" title="View More">Посмотреть</a>
+								 </div>		 -->							
 						</div>
+					<div class="col-md-1">
+						
 					</div>
-				</div>		
-
-				<div class="col-lg-12 col-md-10 col-sm-10 comrade__second--row">
-					<div class="col-lg-15 col-md-15 col-sm-3">
-						<div class="comrade__cases">
+					</div>		
+				<div class="row comrade__second--row">
+					<div class="col-md-2 col-md-offset-1 comrade__cases">
 							<!-- <object type="image/svg+xml" data="img/" class="comrade__imgs">
 							</object>
 							<div class="caption">
@@ -166,10 +160,8 @@
 								</span>
 								<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>
 							 </div> -->
-							</div>
 					</div>
-					<div class="col-lg-15 col-md-15 col-sm-3">
-						<div class="comrade__cases">
+					<div class="col-md-2 comrade__cases">
 							<!-- <object type="image/svg+xml" data="img/" class="comrade__imgs">
 							</object>
 							<div class="caption">
@@ -177,10 +169,8 @@
 							    <p>"Лучшие люди России"</p>
 							    <a class="btn" href="#" title="View More">Посмотреть</a>
 							 </div> -->
-						</div>
 					</div>
-					<div class="col-lg-15 col-md-15 col-sm-3">
-						<div class="comrade__cases">
+					<div class="col-md-2 comrade__cases">
 							<!-- <object type="image/svg+xml" data="img/" class="comrade__imgs">
 							</object>
 							<div class="caption">
@@ -188,10 +178,8 @@
 							    <p>"Лучший сайт России"</p>
 							    <a class="btn" href="#" title="View More">Посмотреть</a>
 							 </div> -->
-						</div>
 					</div>
-					<div class="col-lg-15 col-md-15 col-sm-3">
-						<div class="comrade__cases">
+					<div class="col-md-2 comrade__cases">
 							<!-- <object type="image/svg+xml" data="img/" class="comrade__imgs">
 							</object>
 							 <div class="caption">
@@ -199,10 +187,8 @@
 							    <p>"Лучший сайт России"</p>
 							    <a class="btn" href="#" title="View More">Посмотреть</a>
 							 </div> -->
-						</div>
 					</div>
-					<div class="col-lg-15 col-md-15 col-sm-3">
-						<div class="comrade__cases">
+					<div class="col-md-2 comrade__cases">
 							<!-- <object type="image/svg+xml" data="img/" class="comrade__imgs">
 							</object>
 							 <div class="caption">
@@ -210,15 +196,16 @@
 							    <p>"Лучший сайт России"</p>
 							    <a class="btn" href="#" title="View More">Посмотреть</a>
 							 </div>		 -->							
-						</div>
 					</div>
-				</div>	
-
-			</section>
-		</div>		
-	</div>
+				</div>		
+			</div>
+		</section>
+	<div id="left"></div>
+	<div id="right"></div>
+	<div id="top"></div>
+	<div id="bottom"></div>
     <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>	
 </body>
-</html>d
+</html>

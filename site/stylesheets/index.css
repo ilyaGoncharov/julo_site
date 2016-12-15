@@ -51,17 +51,22 @@ body {
 .: MAIN BOTTOM ROW :. 
 =================================================================================================*/
 
-div.main_button {
+a.main_button {
+	height: 40px;
+	width: 220px;
+	color: white;
+	background: rgba(250, 250, 250, 0.1);
 	border: white solid 1px;
+	border-radius: 0px;
+	padding: 10px;
 }
 
-div.main_button a {
+a.main_button:hover {
+	background: rgba(250, 250, 250, 0);
+	text-decoration: none;
 	color: white;
 }
 
-div.main_button:hover, div.main_button a:hover {
-	
-}
 
 /*================================================================================================ 
 .:. 
