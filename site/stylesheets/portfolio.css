@@ -12,6 +12,7 @@ div.portfolio__cases {
 	background-color: white;
 	margin: 5px;
 	overflow: hidden;
+	z-index: 10;
 }
 
 .portfolio__cases--empty {
@@ -20,7 +21,13 @@ div.portfolio__cases {
 }
 
 div.portfolio__object--box {
-	
+	width: 52%;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+
+div.portfolio__object--box > object {
+
 }
 
 div.portfolio__cases .caption {
@@ -97,6 +104,10 @@ div.portfolio__cases .caption a.btn span.done {
 	margin: -7px;
 }
 
+div.portfolio__cases:hover {
+	background: transparent;
+}
+
 div.portfolio__cases:hover h4,
 div.portfolio__cases:hover a.btn {
 	left: 0px;
@@ -109,7 +120,8 @@ div.portfolio__cases:hover p {
 }                  
 
 div.portfolio__cases:hover object{
-	opacity: .4;
+	opacity: 0;
+	
 } 
 
 

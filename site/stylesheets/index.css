@@ -1,6 +1,6 @@
 body {
-	overflow-x: hidden;
-	overflow-y: hidden;
+	overflow-x: scroll;
+	overflow-y: scroll;
 }
 
 /*================================================================================================ 

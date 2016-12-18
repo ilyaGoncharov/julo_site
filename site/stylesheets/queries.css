@@ -17,6 +17,7 @@
   and (min-resolution: 192dpi) { 
 }
 
+
 @media (max-width: 767px) {
   .visible-xs {
     display: block !important;
@@ -32,17 +33,40 @@
     display: table-cell !important;
   }
 
+
+  html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
   img#logo0, 
   img#logo1  {
-    margin: 0 auto; 
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px; 
+    z-index: 400;
   }
-  
+
+  .crossburger {
+    margin-top: 0px;
+  }
+
+  #crossburger {
+    width: 3em;
+    right: ;  
+  }
+
+  .main__menu ul {
+    margin-top: 45%;
+  }
 }
+
 @media (max-width: 767px) {
   .visible-xs-block {
     display: block !important;
   }
 }
+
 @media (max-width: 767px) {
   .visible-xs-inline {
     display: inline !important;
@@ -53,6 +77,7 @@
     display: inline-block !important;
   }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .visible-sm {
     display: block !important;
@@ -67,7 +92,34 @@
   td.visible-sm {
     display: table-cell !important;
   }
+
+  html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  img#logo0, 
+  img#logo1  {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px; 
+  }
+
+  .crossburger {
+    margin-top: 0px;
+  }
+
+   #crossburger {
+    width: 5%;
+    right: 47.5%;
+  }
+
+  .main__menu ul {
+    margin-top: 25%;
+  }
+
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .visible-sm-block {
     display: block !important;
@@ -97,6 +149,12 @@
   td.visible-md {
     display: table-cell !important;
   }
+
+  html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .visible-md-block {
