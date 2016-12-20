@@ -145,14 +145,14 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	height: 100vh;
 	position: relative;
 	animation: hue-rotate 50s infinite;
-	background-color: #00FFFF;
+	background-color: #7dc6fa;
 	opacity: 1;
 	z-index: 0;
 }
 
 @keyframes hue-rotate {
 	0%  { filter: hue-rotate(0deg)}
-    50%  { filter: hue-rotate(110deg)}
+    50%  { filter: hue-rotate(70deg)}
     100% { filter: hue-rotate(0deg)}
 }
 
@@ -197,6 +197,10 @@ ul {
 	height: 100%;
 	z-index: 4;
 } 
+
+#logo1 {
+	fill: #7dc6fa;
+}
 
 #logo1 {
 	display: none;
