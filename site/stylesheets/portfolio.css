@@ -104,30 +104,32 @@ div.portfolio__cases .caption a.btn {
 	transition: all 0.3s linear 0s;
 }
 
-div.portfolio__cases .caption a.btn span.done {
-	float: left;
-	text-align: left;
-}
-
 div.portfolio__cases:hover {
 	background: transparent;
+	z-index: 3000;
 }
 
 div.portfolio__cases:hover h4,
 div.portfolio__cases:hover a.btn {
 	left: 0px;
 	opacity: 1;
+	z-index: 3000;
 }
 
 div.portfolio__cases:hover .caption,
 div.portfolio__cases:hover p {
 	opacity: 1;
+	z-index: 3000;
 }                  
 
 div.portfolio__cases:hover object{
 	opacity: 0;
 	
 } 
+
+ .portfolio-icon {
+ 	display: block;
+ }
 
 
 /*================================================================================================ 
