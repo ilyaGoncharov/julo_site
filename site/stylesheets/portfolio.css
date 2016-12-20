@@ -29,10 +29,10 @@ div.portfolio__cases {
 	font-weight: 400;
 }
 
-div.portfolio__object--box {
-	width: 52%;
+div.portfolio__object--box object {
+	max-height: 120px;
     margin: 0 auto;
-    margin-top: 15%;
+    margin-top: 50px;
 }
 
 div.portfolio__object--box > object {
