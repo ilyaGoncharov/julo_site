@@ -30,6 +30,7 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/global.css" media="screen"> 
 	<link rel="stylesheet" type="text/css" href="stylesheets/contacts.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="stylesheets/queries.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="stylesheets/alertify.core.css" media="screen">
 
 	<!-- <link rel="icon" type="image/png" href="http:// ./img/favicon-16x16.png" sizes="16x16"/>
     <link rel="icon" type="image/png" href="http:// ./img/favicon-32x32.png" sizes="32x32"/> -->
@@ -52,15 +53,16 @@
 
 <body>
 	<div class="wrapper">
-		<div id="inner__wrapper" class="inner__wrapper">
-			
-			<div id="menu" class="main__menu">
+
+		<div id="menu" class="main__menu">
 				<ul>
 			       <li class="menu__item"> <a href="portfolio.html" class="btn menu__link"> портфолио </a> </li>
 				   <li class="menu__item"> <a href="contacts.html" class="btn menu__link"> контакты </a> </li>
 				   <li class="menu__item"> <a href="comrades.html" class="btn menu__link"> команда </a> </li>
 			    </ul>
-			</div>
+		</div>
+
+		<div id="inner__wrapper" class="inner__wrapper">
 
 			<section class="container up__row col-lg-12"> 
 				<div class="row">
@@ -112,18 +114,18 @@
 						            <form id="contactForm">
 						          		<div class="row">
 
-							          		<div class="col-lg-6 name_send">
+						          			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 name_send">
 											    <div class="form-group">
 								                    <input id="contact__form--name" class="form-control" type="text" name="Имя:"  required="required" value="" placeholder="Ваше имя:" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваше имя:'" minlength="2" maxlength="30">
 							                	</div>
 											</div> 
 
-											<div class="col-lg-6 mail_send">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 mail_send">
 												<div class="form-group">
 											  	    <input id="contact__form--email" class="form-control" type="email" name="Ответить:" required="required" value="" placeholder="E-mail:" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail:'" minlength="2" maxlength="30">
 											  	 </div>   
 											</div> 
-
+											
 											<div class="col-lg-12 messege_send">
 												<div class="form-group">
 												    <textarea id="contact__form--message" class="form-control" name="Текст сообщения:" rows="4" placeholder="Cообщение:" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Cообщение:'" minlength="10" maxlength="500" required="required"></textarea>
@@ -159,6 +161,7 @@
     <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>	
-	 <script src="js/sender.js"></script>
+	<script type="text/javascript" src="js/alertify.js"></script>
+	<script type="text/javascript" src="js/sender.js"></script>
 </body>
 </html>

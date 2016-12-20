@@ -14,6 +14,6 @@ $('#contactForm').submit(function(e) {
 		});
 		e.preventDefault()
 		$(this).get(0).reset() 
-		alertify.error('Сообщение отправленно!')
+		alertify.alert('Сообщение отправленно!')
 	}
 });

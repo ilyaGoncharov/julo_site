@@ -56,6 +56,16 @@ ul {
 	padding: 0px;
 }
 
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+	background-color: transparent !important;
+	color: white !important;
+}
+
+#alertify-ok {
+	outline: none;
+}
+
+
 #inner-editor {
 	display: none;
 }
@@ -98,6 +108,7 @@ ul {
 
 .wrapper {
 	width: 100%;
+	height: 100vh;
 	position: relative;
 	z-index: 0;
 }
@@ -126,7 +137,6 @@ ul {
 	padding-right: 0px;
 	margin-left: 0px; 
     margin-right: 0px; 
-    margin-top: 30px;
 }
 
 .logo {
@@ -152,7 +162,6 @@ ul {
 	text-align: center;
 	font-size: 1.7rem;
 	font-weight: 300;
-	margin-top: 50px;
 	color: white;
 }
 
@@ -281,7 +290,7 @@ ul {
 	padding: 0px;
     background-color: #ffffff;
     opacity: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -304,7 +313,7 @@ ul {
 }
 
 .menu__item a {
-	font-size: 30px;
+	font-size: 270%;
 	color: #5c76c1;
 }
 
@@ -318,8 +327,6 @@ ul {
 	display: inline-block;
   	line-height: normal;
 	text-decoration: none;
-	color: #141b26;
-	padding: 20px;
 }
 
 .menu__link:focus {

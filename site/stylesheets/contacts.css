@@ -94,7 +94,7 @@ textarea.form-control:focus {
 div.name_send {
 	border: 1px solid #264399;
 	height: 40px;
-	max-width: 49%
+	max-width: 49%;
 }
 
 div.name_send:hover {
@@ -113,7 +113,7 @@ div.mail_send:hover {
 }
 
 div.messege_send {
-	margin-top: 2%;
+	margin-top: 4%;
 	border: 1px solid #264399;
 	height: 100px;
 	max-width: 100%;
