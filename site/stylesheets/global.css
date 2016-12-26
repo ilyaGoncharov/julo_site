@@ -427,7 +427,7 @@ ul {
 }
 
 .menu__item a {
-	font-size: 270%;
+	font-size: 200%;
 	color: #5c76c1;
 }
 
@@ -467,7 +467,7 @@ ul {
 }
 
 #top, #bottom, #left, #right {
-	background: #26449b;
+	background: #5c76c1;
 	position: fixed;
 }
 
