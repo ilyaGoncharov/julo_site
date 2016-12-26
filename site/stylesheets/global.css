@@ -432,6 +432,7 @@ ul {
     line-height: 60px;
     text-align: center;
     margin-top: 1%;
+    position:relative;
 }
 
 .menu__item a {
@@ -441,8 +442,26 @@ ul {
 
 .menu__item:hover, 
 .menu__item:hover a {
-	text-decoration: none;
-	color: #26449b;
+  text-decoration: none;
+  color: #26449b;
+}
+
+.menu__item::before, 
+.menu__item::after {
+  position: relative;
+  content: "";
+  display: none;
+  width: 30%;
+  height: 2px;
+  border-style:solid;
+  background-color: #26449b;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.menu__item:hover:before, 
+.menu__item:hover:after {
+  display:inline-block;
 }
 
 .menu__link {
