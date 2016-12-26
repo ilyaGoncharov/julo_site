@@ -474,17 +474,21 @@ ul {
 #left, #right {
 	top: 10px; 
 	bottom: 10px;
-	width: 15px;
-	}
+	width: 10px;
+}
 
-#left { left: 10px; }
-#right { right: 10px; 
+#left { 
+	left: 10px; 
+}
+
+#right { 
+	right: 10px; 
 }
 		
 #top, #bottom {
 	left: 10px; 
 	right: 10px;
-	height: 15px;
+	height: 10px;
 }
 
 #top { 
