@@ -7,7 +7,6 @@
 
 	<meta name="description" content="#"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,134 +52,187 @@
 </head>
 
 <body>
+
+	<!-- The overlay -->
+	<div id="form" class="overlay">
+		<!-- Overlay content -->
+		<div class="overlay-content">
+			<form id="contactform">
+		   		<div class="form-group">
+				    <input type="text"  class="form-control" id="ffname" name="Имя" placeholder="Имя*">
+				    <input type="text"  class="form-control" id="ffcorp" name="Ответить" placeholder="Компания">
+					<input type="email" class="form-control" id="ffmail" name="E-mail" placeholder="E-mail*">
+				    <textarea class="form-control" rows="18" id="fftext" name="Текст сообщения" placeholder="Текст письма*"></textarea>
+				    <input type="text" name="_gotcha" style="display:none">
+				    <input type="hidden" name="_cc" value="karnebero@gmail.com">
+			    </div>
+				<button type="submit" class="btn btn-default butt">Отправить</button>
+				<br>
+				<p>* - поля обязательные для заполнения</p>
+				<a class="closebtn" onclick="show(form)">&times;</a>
+			</form>
+		</div>
+	</div>
+
 	<div class="wrapper">
-		
-			<div id="menu" class="main__menu">
-				<ul>
-			       <li class="menu__item"> <a href="portfolio.html" class="btn menu__link"> Портфолио </a> </li>
-				   <li class="menu__item"> <a href="contacts.html" class="btn menu__link"> Контакты </a> </li>
-				   <li class="menu__item"> <a href="comrades.html" class="btn menu__link"> Команда </a> </li>
-			    </ul>
-			    <div id="left"></div>
-				<div id="right"></div>
-				<div id="top"></div>
-				<div id="bottom"></div>
-			</div>
+		<div id="inner__wrapper" class="inner__wrapper">
 
-			<div id="inner__wrapper" class="inner__wrapper">
-
-				<section class="container up__row"> 
-					<div class="row">
-						<div class="col-lg-offset-1 col-lg-2 col-md-3 сol-xs-3 logo">
-							<a href="index.html">
-								<div class="logo--container">
-									<img id="logo0" src="img/logo_julo_light.svg" alt="[ J U L O ]">
-									<img id="logo1" src="img/logo_blue.svg" alt="[ J U L O ]">
-								</div>
-							</a>
-						</div>
-
-						<div class="col-lg-6 сol-xs-3">
-							<p class="page__name"></p>
-						</div>
-						
-						<div class="col-lg-2 сol-xs-3">
-							<div id="crossburger">
-								<button class="c-hamburger c-hamburger--htx" onclick="show(menu)">
-							  		<span></span>
-								</button>
-							</div> 	
-							<!-- <div class="crossburger" onclick="show(menu)">
-								<div id="crossburger">
-								  <span></span>
-								  <span></span>
-								  <span></span>
-								  <span></span>
-								  <span></span>
-								  <span></span>
-								</div>	
-							</div> -->
-						</div>
-				</section>	
+			<section class="up__row"> 
+				<div class="logo logo--container">
+					<a href="index.html">
+						<img id="logo0" src="img/logo_julo_new_rec.svg" alt="[ J U L O ]">
+					</a>
+				</div>
+				<div class="main__menu1">
+					<ul>
+						<li class="menu__item1"> <a href="portfolio.html" class="btn menu__link1"> Портфолио </a> </li>
+					 	<li class="menu__item1"> <a href="#" class="btn menu__link1" onclick="show(form)"> Cвязаться </a> </li>
+					</ul>
+				</div>
+			</section>	
 
 			<section class="container-fluid"> 
-				<div class="col-xs-12">
-					<div class="row">
-						<div class="portfolio__rirst--row">
-								<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-									<div class="portfolio__cases">
-									    <div class="portfolio__object--box">
-											<object type="image/svg+xml" data="img/snabservice.svg" class="portfolio__logos">
-											</object>
-										</div>
-										<div class="caption">
-										    <h4>СнабСервис</h4>
-										    <p> 
-										    	Поставщик металлолома на 
-												переплавляющий завод и 
-												дистрибьютор продукции завода <br> <br>
-												Дизайн и верстка сайта <br>
-												Разработка логотипа
-											</p>	
-											<!-- <a class="btn glyphicon glyphicon-new-window portfolio-icon" href="#" title="View More"></a> -->
-										 </div>
- 									</div>
-								</div>
-								<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-									<div class="portfolio__cases">
-										<div class="portfolio__object--box">
-											<object type="image/svg+xml" data="img/milyakov.svg" class="portfolio__logos">
-											</object>
-										</div>
-										<div class="caption">
-										    <h4>Anton Milyakov</h4>
-											<p> 
-										    	Lorem ipsum sample text <br> <br>
-												Дизайн и верстка сайта <br>
-												Разработка логотипа
-											</p>	
-											<!-- <a class="btn glyphicon glyphicon-new-window portfolio-icon" href="#" title="View More"></a> -->
-										 </div>
-								</div>
-								</div>
-								<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-									<div class="portfolio__cases">
-										<div class="portfolio__object--box">
-											<object type="image/svg+xml" data="img/santermic.svg" class="portfolio__logos">
-											</object>
-										</div>
-										<div class="caption">
-										   <h4>Сантермик</h4>
-											<p> 
-										    	Lorem ipsum sample text <br> <br>
-												Дизайн и верстка сайта <br>
-												Разработка логотипа
-											</p>	
-											<!-- <a class="btn glyphicon glyphicon-new-window portfolio-icon" href="#" title="View More"></a> -->
-										 </div>
-									</div>
-								</div>
-
-								<div class="col-lg-offset-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-									<div class="portfolio__cases portfolio__cases--empty ">
-										<div class="caption">
-											    <h4>Место для вашего проекта</h4>
-											    <p style="margin-top: 80px; text-decoration: none;"><a href="/contacts.html">Перейти к контактам</p>	
-										</div>
-									</div>
-								</div>								
-						</div>
-						<div class="row portfolio__second--row">
-						</div>
+				<div class="row">
+					<div class="portfolio__rirst--row">
+						<p>ПОРТФОЛИО</p>
 					</div>
 				</div>
+			</section>
 
+			<section class="container-fluid"> 
+				<div class="row portfolio__second--row">
+					<div class="col-sm-12 portfolio__cases pad_rM pad_lM">
+						<div id="carouselImg" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+							    <li data-target="#carouselImg" data-slide-to="0" class="active"></li>
+							    <li data-target="#carouselImg" data-slide-to="1"></li>
+							    <li data-target="#carouselImg" data-slide-to="2"></li>
+							</ol>   
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<div class="col-sm-7 portfolio__object--box img--box">
+										<a href="http://milyakov.com/" title="">
+											<img class="d-block img-fluid" src="stylesheets/pics/site1.png" alt=":(: missing slide, folks :):">
+										</a>
+									</div>
+									<div class="col-sm-5 portfolio__object--box text--box">
+								    	<div class="caption1">
+										    <p> 
+										    	Anton Milyakov <br>
+										    	Ведущий мероприятий в Москве и не только. От маленьких и уютных до больших и роскошных.
+											</p>	
+											<br>
+											<br>
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/transform.svg" alt="icon0"><br><br></div>
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/browser-4.svg" alt="icon0"><br><br></div>
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/keyboard.svg" alt="icon0"><br><br></div>
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/mouse.svg" alt="icon0"><br><br></div>	
+											<br>	
+											<br>
+											<br>	
+											<a href="http://milyakov.com/">http://milyakov.com/</a>		
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-sm-7 portfolio__object--box img--box">
+										<a href="http://texnokor.com/" title="">
+											<img class="d-block img-fluid" src="stylesheets/pics/site2.png" alt=":(: missing slide, folks :):">
+										</a>
+									</div>
+									<div class="col-sm-5 portfolio__object--box text--box">
+								    	<div class="caption1">
+										   <p> 
+										    	НПО "Технокор"<br>
+										    	Научно-производственное объединение. Молекулярные технологии.
+											</p>	
+											<br>
+											<br>
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/transform.svg" alt="icon0"><br><br></div>
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/browser-4.svg" alt="icon0"><br><br></div>
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/keyboard.svg" alt="icon0"><br><br></div>
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/mouse.svg" alt="icon0"><br><br></div>	
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/floppy-disk.svg" alt=""><br><br></div>
+											<br>	
+											<br>	
+											<br>
+											<a href="http://texnokor.com/">http://texnokor.com/</a>		
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-sm-7 portfolio__object--box img--box">
+										<a href="http://tcm-llc.ru/" title="">
+											<img class="d-block img-fluid" src="stylesheets/pics/site3.png" alt=":(: missing slide, folks :):">
+										</a>
+									</div>
+									<div class="col-sm-5 portfolio__object--box text--box">
+								    	<div class="caption1">
+										    <p> 
+										    	ООО "ТСМ" <br>
+										    	Химическая продукция для промышленных предприятий.
+											</p>	
+											<br>
+											<br>
+											<!-- <div class="col-sm-2 icon"><img src="stylesheets/pics/transform.svg" alt="icon0"><br><br></div> -->
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/browser-4.svg" alt="icon0"><br><br></div>
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/keyboard.svg" alt="icon0"><br><br></div>
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/mouse.svg" alt="icon0"><br><br></div>	
+											<br>	
+											<br>	
+											<br>	
+											<a href="http://tcm-llc.ru/">http://tcm-llc.ru/</a>		
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="col-sm-7 portfolio__cases pad_lM">
+					    <div class="portfolio__object--box img--box">
+							<a href="http://milyakov.com/" title="">
+								<img src="stylesheets/pics/site1.png" alt=":'(">
+							</a>
+						</div>
+					</div> -->
+
+					<!-- <div class="col-sm-5 portfolio__cases pad_rM pad_lM ">
+					    <div class="portfolio__object--box text--box">
+					    	<div class="caption1">
+							    <p> 
+							    	Anton Milyakov <br>
+							    	Ведущий мероприятий в Москве и не только. От маленьких и уютных до больших и роскошных.
+								</p>	
+								<br>
+								<div class="col-sm-2 icon"><img src="stylesheets/pics/transform.svg" alt="icon0"><br><br></div>
+								<div class="col-sm-2 icon"><img src="stylesheets/pics/browser-4.svg" alt="icon0"><br><br></div>
+								<div class="col-sm-2 icon"><img src="stylesheets/pics/keyboard.svg" alt="icon0"><br><br></div>
+								<div class="col-sm-2 icon"><img src="stylesheets/pics/mouse.svg" alt="icon0"><br><br></div>	
+								<br>	
+								<br>	
+								<a href="http://milyakov.com/">http://milyakov.com/</a>							
+							</div>
+						</div>
+					</div> -->
+
+				</div>
 			</section>
 		</div>		
 	</div>
+	<section class="container-fluid icon__bar p_c2">
+			<div class="col-sm-2 icon"><img src="stylesheets/pics/transform.svg" alt=""><br><br>Логотип</div>
+			<div class="col-sm-2 icon"><img src="stylesheets/pics/browser-4.svg" alt=""><br><br>Дизайн</div>
+			<div class="col-sm-2 icon"><img src="stylesheets/pics/keyboard.svg" alt=""><br><br>Верстка</div>
+			<div class="col-sm-2 icon"><img src="stylesheets/pics/floppy-disk.svg" alt=""><br><br>Базы Данных</div>
+			<div class="col-sm-2 icon"><img src="stylesheets/pics/mouse.svg" alt=""><br><br>Продвижение</div>
+			<div class="col-sm-2 icon"><img src="stylesheets/pics/imac.svg" alt=""><br><br>Поддержка</div>
+	</section>
+
     <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>	
 	<script type="text/javascript" src="js/portfolio.js"></script>	
+	<script type="text/javascript" src="js/script.js"></script>	
+	
 </body>
 </html>

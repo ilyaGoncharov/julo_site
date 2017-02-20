@@ -1,47 +1,35 @@
-body {
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
-
 /*================================================================================================ 
 .: MAIN MIDDLE ROW :. 
 =================================================================================================*/
+body {
+	overflow-y: hidden;
+}
+
+.wrapper {
+	height: 100%;
+}
 
 .main__row {
-	padding-left: 0px;
-	padding-right: 0px;
-	width: 100%;
-	margin-top: 0px;
+	height: 100px;
+	margin-top: 50px;
 }
 
-.main__row--text {
-	padding-left: 1.5%;
-	padding-right: 1.5%;
-
-	text-align: center;
-
-	margin-top: 8%;
+.main__row #word {
+	font-family: pixel_1;
+	font-size: 5.5rem;
+	letter-spacing: -5px;
+	color: white;
+	position: absolute;
+	left: 30px;
+	bottom: -50px;
 }
 
-
-.project__name {
-	font-size: 450%;
-	font-weight: 600;
-	letter-spacing: 1px;
+#test {
 }
 
-h1.project__name {
-	margin-bottom: 18px;
-}
-
-.project__tagline {
-	font-size: 100%;
-	letter-spacing: 1px;
-}
-	
-.project__name--description {
-	font-size: 1.5rem;
-	font-weight: 100;
+.main__row .letter {
+	margin: 0px;
+	padding: 0px;
 }
 
 
@@ -49,28 +37,10 @@ h1.project__name {
 .:. 
 =================================================================================================*/
 
+
 /*================================================================================================ 
 .: MAIN BOTTOM ROW :. 
 =================================================================================================*/
-
-a.main_button {
-	height: 40px;
-	width: 70%;
-	color: white;
-	background: rgba(250, 250, 250, 0.1);
-	border: white solid 1px;
-	border-radius: 0px;
-	padding-top: 10px;
-	margin-top: 90px;
-	margin-left: 15%;
-}
-
-a.main_button:hover {
-	background: rgba(250, 250, 250, 0);
-	text-decoration: none;
-	color: white;
-}
-
 
 /*================================================================================================ 
 .:. 

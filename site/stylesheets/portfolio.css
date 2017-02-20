@@ -1,49 +1,160 @@
 /*================================================================================================ 
 .: PORTFOLIO GLOBAL :. 
 =================================================================================================*/
-.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, 
-.col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, 
-.col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, 
-.col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, 
-.col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-    padding-right: 0px; 
-    padding-left: 0px; 
+html, body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #fff;
 }
 
-div.portfolio__cases {
-	height: 220px;
-	width: initial;
-	background-color: white;
-	margin: 5px;
-	overflow: hidden;
-	z-index: 10;
-}
 
-.portfolio__cases--empty {
-	background-color: transparent !important;
-	border: 1px dashed white;
-}
+/*================================================================================================ 
+.:. 
+=================================================================================================*/
 
-.portfolio__cases--empty a {
+/*================================================================================================ 
+.: PORTFOLIO FIRST ROW :. 
+=================================================================================================*/
+div.portfolio__rirst--row {
+	font-family: pixel_1;
+	font-size: 5.5rem;
 	color: white;
-	font-weight: 400;
+	position: absolute;
+	left: 90px;
+	top: 72px;
 }
 
-div.portfolio__object--box object {
-	max-height: 120px;
-    margin: 0 auto;
-    margin-top: 50px;
+div.portfolio__rirst--row div {
+	padding: 0px;
 }
 
-div.portfolio__object--box > object {
+/*================================================================================================ 
+.:. 
+=================================================================================================*/
 
+/*================================================================================================ 
+.: PORTFOLIO BOTTOM ROW :. 
+=================================================================================================*/
+
+.portfolio__second--row {
+	margin-top: 50px;
 }
 
-div.portfolio__cases .caption {
+.icon__bar {
+	display: none;
+	/* display: block; */
+    bottom: -10px;
+    left: 30px;
+    background: transparent;
+    font-size: 1.3rem;
+	/* border: 1px solid white; */
+	height: 15vh;	
+ 	text-align: center;
+    padding: 15px;
+    z-index: 1;
+}
+
+.icon__bar .icon,
+.caption1 .icon {
+	padding: 0px;
+	z-index: 1;
+}
+
+.icon__bar .icon img {
+	width: 15%;
+	padding: 0px;
+	z-index: 1;
+}
+
+.caption1 .icon img {
+	width: 30%;
+	float: left;
+	/* opacity: 1 !important; */
+	-webkit-transition: opacity .15s ease-in-out;
+    -moz-transition: opacity .15s ease-in-out;
+    -ms-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+}
+ 
+div.portfolio__cases {
+	background-color: transparent;
+}
+
+.pad_lM {
+	padding-left: 0px;
+}
+
+.pad_rM {
+	padding-right: 0px;
+}
+
+.p_c2 {
+	margin-top: 50px;
+} 
+
+div.portfolio__object--box {
+	border: 1px solid white;
+	height: 55vh;
+	color: white;
+	font-size: 1.1rem;
+	z-index: 2;
+}
+
+.img--box {
+	overflow:hidden;
+	overflow-x: auto;
+    white-space: nowrap;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+div.portfolio__object--box h4,
+div.portfolio__object--box p {
+}
+
+div.portfolio__object--box img {
+	width:100%;
+	margin: 0 auto;
+	overflow: hidden;
+	filter: alpha(opacity=50);
+	opacity: .5;
+}
+
+div.portfolio__object--box img:hover {
+	opacity: .9;
+}
+
+div.portfolio__object--box .caption1 {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+div.portfolio__object--box .caption1 h4 {
+	margin: 0px;
+}
+
+.p_c2 .portfolio__object--box {
+	border: none; 
+} 
+
+.text--box {
+	border: none !important;
+}
+
+/* 
+div.portfolio__object--box .caption1 {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	height: 218px;
+	height: 108px;
 	width: 99%;
 	color: white;
 	opacity: 0;
@@ -52,13 +163,14 @@ div.portfolio__cases .caption {
 	-moz-transition: all 0.5s linear 0s;
 	-o-transition: all 0.5s linear 0s;
 	transition: all 0.5s linear 0s;
-}
+} */
 
+/*
 div.portfolio__cases .caption h4 {
 	font-size: 25px;
 	font-weight: 300;
 	text-align: left;
-	/* border-bottom: 1px solid white; */
+	border-bottom: 1px solid white;
 	padding-bottom: 5px;
 	margin-top: 20px;
 	position: relative;
@@ -78,7 +190,7 @@ div.portfolio__cases .caption p {
 	font-weight: 100;
 	margin: 0px 0px;
 	text-align: left;
-	/* font-style: italic;*/  
+	 font-style: italic;  
 	padding: 10px 30px 0px 10px;
 	margin-left: 19px;
 	opacity: 0;
@@ -94,9 +206,7 @@ div.portfolio__cases .caption a.btn {
 	text-align: right;
 	display: block;
 	color: white;
-	padding: 10px 0px;
 	border-radius: 5px;
-	margin: 15px 30px 0px auto;
 	position: absolute;
 	bottom: 0;
 	opacity: 0;
@@ -133,37 +243,7 @@ div.portfolio__cases:hover object{
 
  .portfolio-icon {
  	display: block;
- }
-
-
-/*================================================================================================ 
-.:. 
-=================================================================================================*/
-
-/*================================================================================================ 
-.: PORTFOLIO MIDDLE ROW :. 
-=================================================================================================*/
-div.portfolio__rirst--row {
-	width: 90%;
-	margin: 0 auto;
-	margin-top: 40px;
 }
-
-/*================================================================================================ 
-.:. 
-=================================================================================================*/
-
-/*================================================================================================ 
-.: PORTFOLIO BOTTOM ROW :. 
-=================================================================================================*/
-
-.portfolio__second--row {
-	height: 40px;
-	margin: 0 auto;
-	margin-top: 0%;
-}
-
-
 
 /*================================================================================================ 
 .:. 

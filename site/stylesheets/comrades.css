@@ -17,7 +17,6 @@ html, body {
 
 div.comrade__cases {
   background-color: white;
-  border: 2px solid transparent;
   margin-right: 5px;
   margin-top: 5px;
   box-sizing: border-box;
@@ -69,11 +68,11 @@ div.comrade__cases .position h4 {
   left: 300px;
   margin-left: 29px;
   opacity: 0;
-  -o-transition: all 0.3s linear 0s;
-  -webkit-transition: all 0.3s linear 0s;
-  -moz-transition: all 0.3s linear 0s;
-  -o-transition: all 0.3s linear 0s;
-  transition: all 0.3s linear 0s;
+  -o-transition: all 0.4s linear 0s;
+  -webkit-transition: all 0.4s linear 0s;
+  -moz-transition: all 0.4s linear 0s;
+  -o-transition: all 0.4s linear 0s;
+  transition: all 0.4s linear 0s;
 }
 
 
@@ -86,11 +85,11 @@ div.comrade__cases .position p {
   padding: 10px 30px 0px 10px;
   margin-left: 19px;
   opacity: 0;
-  -o-transition: all 0.3s linear 0s;
-  -webkit-transition: all 0.3s linear 0s;
-  -moz-transition: all 0.3s linear 0s;
-  -o-transition: all 0.3s linear 0s;
-  transition: all 0.3s linear 0s;
+  -o-transition: all 0.4s linear 0s;
+  -webkit-transition: all 0.4s linear 0s;
+  -moz-transition: all 0.4s linear 0s;
+  -o-transition: all 0.4s linear 0s;
+  transition: all 0.4s linear 0s;
 }
 
 div.comrade__cases .position a.btn {
