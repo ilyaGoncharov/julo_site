@@ -65,23 +65,22 @@
 	</head>
 	<body>
 
-		<!-- The overlay -->
 		<div id="form" class="overlay">
-			<!-- Overlay content -->
 			<div class="overlay-content">
 				<form id="contactform">
+					<h4>Напишите нам письмо</h4>
+					<p class="fillinput">Заполните пожалуйста все поля</p>
+					<a class="closebtn" onclick="show(form)">&times;</a>
 			   		<div class="form-group">
-					    <input type="text"  class="form-control" id="ffname" name="Имя" placeholder="Имя*">
+					    <input type="text"  class="form-control" id="ffname" name="Имя" placeholder="Имя">
 					    <input type="text"  class="form-control" id="ffcorp" name="Ответить" placeholder="Компания">
-						<input type="email" class="form-control" id="ffmail" name="E-mail" placeholder="E-mail*">
-					    <textarea class="form-control" rows="18" id="fftext" name="Текст сообщения" placeholder="Текст письма*"></textarea>
+						<input type="email" class="form-control" id="ffmail" name="E-mail" placeholder="E-mail">
+					    <textarea class="form-control" rows="18" id="fftext" name="Текст сообщения" placeholder="Текст письма"></textarea>
 					    <input type="text" name="_gotcha" style="display:none">
 					    <input type="hidden" name="_cc" value="karnebero@gmail.com">
 				    </div>
 					<button type="submit" class="btn btn-default butt">Отправить</button>
 					<br>
-					<p>* - поля обязательные для заполнения</p>
-					<a class="closebtn" onclick="show(form)">&times;</a>
 				</form>
 			</div>
 		</div>

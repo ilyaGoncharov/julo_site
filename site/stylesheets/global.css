@@ -42,13 +42,42 @@
 /* Пиксельный стандартный */
 @font-face {
     font-family: "pixel_2";
-    src: url("fonts/basis33.eot");
-    src: url("fonts/basis33.eot?#iefix")format("embedded-opentype"),
-    url("fonts/basis33.woff") format("woff"),
-    url("fonts/basis33.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+	src: url('fonts/9303.eot');
+	src: url('fonts/9303.woff2') format('woff2'),
+	   url('fonts/9303.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
 }
+
+@font-face {
+    font-family: "pixel_3";
+	src: url('fonts/Minecraft.woff') format('woff'),
+		url('fonts/Minecraft.ttf') format('truetype'),
+		url('fonts/Minecraft.svg#Minecraft') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* 
+@font-face {
+  font-family: 'CourierCyrPS';
+  src: url('CourierCyrPS.woff') format('woff'),
+       url('CourierCyrPS.ttf') format('truetype'),
+       url('CourierCyrPS.svg#CourierCyrPS') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ofont.ru_Courier New Cyr';
+  src: url('ofont.ru_Courier New Cyr.eot');
+  src: url('ofont.ru_Courier New Cyr.woff2') format('woff2'),
+       url('ofont.ru_Courier New Cyr.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+:root {}
 
 html, body {
 	background: linear-gradient(359deg, #985297, #8f9ee9);
@@ -71,7 +100,6 @@ html, body {
 body {
 	height: 100vh;
 	width: inherit;
-	margin: 30px;
 }
 
 @-webkit-keyframes AnimationName {
@@ -151,6 +179,7 @@ select:-webkit-autofill:focus {
 .wrapper {
 	width: inherit;
 	z-index: 1;
+	margin: 30px;
 }
 
 #inner__wrapper {
@@ -210,7 +239,8 @@ ul {
 }
 
 .menu__item1 a {
-	font-size: 1.2rem;
+	font-size: 0.7rem;
+	letter-spacing: 0.5px;
 	color: #fff;
 	box-shadow: none !important;
 }
@@ -247,23 +277,73 @@ ul {
 .: CONTACT FORM :.
 =================================================================================================*/
 
+#background {
+	width: 100vw;
+	height: 100vh;
+	z-index: 4;
+}
+
 #form {
 	position: absolute;
-	top: 18px;
+
+	font-size: 0.5rem;
+	letter-spacing: 0.5px;
+
+	top: 100px;
+
 	background-color: transparent;
-	width: 85%;
-	margin-left: 0px
+	width: 60%;
+	margin-left: 20%;
 	height: 95vh;
 	opacity: 0;
 	z-index: -5;
 }
 
+#form h4 {
+	position: absolute;
+	top: -40px;
+	font-size: 1.5rem;
+	margin: 0px;
+}
+
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+  opacity: .9;
+}
+.form-control::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+  opacity: .9;
+}
+.form-control:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+  opacity: .9;
+}
+.form-control:-moz-placeholder { /* Firefox 18- */
+  color: white;
+  opacity: .9;
+}
+
+.closebtn {
+	display: inline-block;
+	width: auto;
+	position: absolute;
+	font-size: 1.5rem;
+	right: 0px;
+	top: -40px;
+	color: white;
+	letter-spacing: 0.5px;
+}
+
+
 .form-group input,
 .form-group textarea {
-	background-color: rgba(255, 255, 255, 0.9);
-	color: black;
-
+	background-color: rgba(255, 255, 255, 0);
 	border: none;
+	border: 2px solid white;
+	color: white;
+	font-size: 0.7rem;
+	letter-spacing: 0.5px;
+
 	box-shadow: none;
 	outline: none;
 
@@ -272,16 +352,25 @@ ul {
 }
 
 .form-group textarea {
-
+	max-width: 100%;
+	max-height: 300px;
+	font-size: 0.7rem;
+	letter-spacing: 0.5px;
 }
 
 #contactform button.butt {
-	width: 10%;
+	width: 40%;
 
-	background-color: rgba(255, 255, 255, 0.9);
-	
+	float: left;
 
+	font-size: 0.7rem;
+	letter-spacing: 0.5px;
+
+	background-color: rgba(255, 255, 255, 0);
 	border: none;
+	border: 2px solid white;
+	color: white;
+	
 	box-shadow: none;
 	outline: none;
 
@@ -290,12 +379,14 @@ ul {
 	margin-bottom: 20px;
 }
 
-.closebtn {
-	position: absolute;
-	right: -100px;
-	top: -10px;
-	color: white;
-	font-size: 45px;
+.fillinput {
+	font-size: 0.7rem;
+	letter-spacing: 0.5px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	width: 40%;
+	padding-left: 9px;
+	border-left: 4px solid white;
 }
 
 /*================================================================================================ 
@@ -323,93 +414,6 @@ ul {
 .logo img {
 	height: 100%;
 } 
-
-#crossburger {	
-	cursor: pointer;
-	float: right;
-}
-
-.c-hamburger {
-	display: block;
-	position: relative;
-	width: 40px;
-	height: 40px;
-	font-size: 0;
-	border-radius: 0px;
-	border: none;
-	background: none;
-	cursor: pointer;
-	transition: background 0.2s;
-	z-index: 4; 
-}
-
-.c-hamburger:focus {
-	outline: none;
-}
-
-.c-hamburger span {
-	display: block;
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	height: 3px;
-	background: none;
-}
-
-.c-hamburger span::before,
-.c-hamburger span::after {
-	position: absolute;
-	display: block;
-	width: 100%;
-	height: 3px;
-	background-color: white;
-	content: "";
-}
-
-.c-hamburger span::before {
-	top: 5px;
-}
-
-.c-hamburger span::after {
-	bottom: 5px;
-}
-
-.c-hamburger--htx span {
-	transition: background 0s 0.3s;
-}
-
-.c-hamburger--htx span::before,
-.c-hamburger--htx span::after {
-	transition-duration: 0.3s, 0.3s;
-	transition-delay: 0.3s, 0s;
-}
-
-.c-hamburger--htx.is-active span {}
-
-.c-hamburger--htx.is-active span::before {
-	top: 0;
-	background-color: white !important;
-	z-index: 4;
-}
-
-.c-hamburger--htx.is-active span::after {
-  	bottom: 0;
-	background-color: white !important;
-	z-index: 4;
-}
-
-.c-hamburger--htx.is-active span:hover:before {
-  transform: rotate(45deg);
-}
-
-.c-hamburger--htx.is-active span:hover:after {
-  transform: rotate(-45deg);
-}
-
-.c-hamburger--htx.is-active span::before,
-.c-hamburger--htx.is-active span::after {
-  transition-delay: 0s, 0.3s;
-}
 
 /*================================================================================================ 
 .:. 

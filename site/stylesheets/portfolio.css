@@ -2,7 +2,7 @@
 .: PORTFOLIO GLOBAL :. 
 =================================================================================================*/
 html, body {
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 ::-webkit-scrollbar {
@@ -24,15 +24,19 @@ html, body {
 =================================================================================================*/
 div.portfolio__rirst--row {
 	font-family: pixel_1;
-	font-size: 5.5rem;
+	font-size: 3.4rem;
 	color: white;
 	position: absolute;
 	left: 90px;
-	top: 72px;
+	top: 20px;
 }
 
 div.portfolio__rirst--row div {
 	padding: 0px;
+}
+
+.up__row {
+	height: 80px;
 }
 
 /*================================================================================================ 
@@ -44,21 +48,15 @@ div.portfolio__rirst--row div {
 =================================================================================================*/
 
 .portfolio__second--row {
-	margin-top: 50px;
+	margin-top: 0px;
 }
 
 .icon__bar {
-	display: none;
-	/* display: block; */
-    bottom: -10px;
-    left: 30px;
-    background: transparent;
-    font-size: 1.3rem;
-	/* border: 1px solid white; */
-	height: 15vh;	
+    font-size: 0.8rem;
+	letter-spacing: 0.5px;
  	text-align: center;
     padding: 15px;
-    z-index: 1;
+    z-index: 0;
 }
 
 .icon__bar .icon,
@@ -73,10 +71,13 @@ div.portfolio__rirst--row div {
 	z-index: 1;
 }
 
+.caption1 .icon {
+	display: block;
+}
+
 .caption1 .icon img {
 	width: 30%;
 	float: left;
-	/* opacity: 1 !important; */
 	-webkit-transition: opacity .15s ease-in-out;
     -moz-transition: opacity .15s ease-in-out;
     -ms-transition: opacity .15s ease-in-out;
@@ -97,14 +98,15 @@ div.portfolio__cases {
 }
 
 .p_c2 {
-	margin-top: 50px;
+	margin-top: 60px;
 } 
 
 div.portfolio__object--box {
-	border: 1px solid white;
+	border: 2px solid white;
 	height: 55vh;
 	color: white;
-	font-size: 1.1rem;
+	font-size: 0.7rem;
+	letter-spacing: 0.5px;
 	z-index: 2;
 }
 
@@ -116,20 +118,56 @@ div.portfolio__object--box {
     padding: 0px !important;
 }
 
-div.portfolio__object--box h4,
-div.portfolio__object--box p {
-}
-
 div.portfolio__object--box img {
-	width:100%;
+	height:100%;
+	width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
 	filter: alpha(opacity=50);
-	opacity: .5;
+	opacity: .6;
+	-webkit-transition: opacity 200ms ease-out 0s;
+    -moz-transition: opacity 200ms ease-out 0s;
+    -o-transition: opacity 200ms ease-out 0s;
+    transition: opacity 200ms ease-out 0s;
 }
 
 div.portfolio__object--box img:hover {
 	opacity: .9;
+	background-color: transparent;
+	-webkit-transition: opacity 200ms ease-out 0s;
+    -moz-transition: opacity 200ms ease-out 0s;
+    -o-transition: opacity 200ms ease-out 0s;
+    transition: opacity 200ms ease-out 0s;
+}
+
+div.portfolio__object--box h4,
+div.portfolio__object--box p {
+}
+
+.carousel-indicators {
+	bottom: 0;
+	left: initial;
+	width: auto;
+	right: 0px;
+	top: 0px;
+}
+
+.carousel-indicators li {
+	display: block;
+	width: 18px;
+	height: 18px;
+	margin: 0px;
+	margin-bottom: 5px;
+	border-radius: 0px;
+	padding: 0px;
+}
+
+.carousel-indicators .active {
+	width: 18px;
+	height: 18px;
+	margin-bottom: 5px;
+	border-radius: 0px;
+	padding: 0px;
 }
 
 div.portfolio__object--box .caption1 {
@@ -149,100 +187,12 @@ div.portfolio__object--box .caption1 h4 {
 	border: none !important;
 }
 
-/* 
-div.portfolio__object--box .caption1 {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	height: 108px;
-	width: 99%;
-	color: white;
-	opacity: 0;
-	-o-transition: all 0.5s linear 0s;
-	-webkit-transition: all 0.5s linear 0s;
-	-moz-transition: all 0.5s linear 0s;
-	-o-transition: all 0.5s linear 0s;
-	transition: all 0.5s linear 0s;
-} */
-
-/*
-div.portfolio__cases .caption h4 {
-	font-size: 25px;
-	font-weight: 300;
-	text-align: left;
-	border-bottom: 1px solid white;
-	padding-bottom: 5px;
-	margin-top: 20px;
-	position: relative;
-	left: 300px;
-	margin-left: 29px;
-	opacity: 0;
-	-o-transition: all 0.3s linear 0s;
-	-webkit-transition: all 0.3s linear 0s;
-	-moz-transition: all 0.3s linear 0s;
-	-o-transition: all 0.3s linear 0s;
-	transition: all 0.3s linear 0s;
+.corpname {
+	font-size: 0.7rem;
+	letter-spacing: 2px;	
 }
 
-
-div.portfolio__cases .caption p {
-	font-size: 15px;
-	font-weight: 100;
-	margin: 0px 0px;
-	text-align: left;
-	 font-style: italic;  
-	padding: 10px 30px 0px 10px;
-	margin-left: 19px;
-	opacity: 0;
-	-o-transition: all 0.3s linear 0s;
-	-webkit-transition: all 0.3s linear 0s;
-	-moz-transition: all 0.3s linear 0s;
-	-o-transition: all 0.3s linear 0s;
-	transition: all 0.3s linear 0s;
-}
-
-div.portfolio__cases .caption a.btn {
-	width: 200px;
-	text-align: right;
-	display: block;
-	color: white;
-	border-radius: 5px;
-	position: absolute;
-	bottom: 0;
-	opacity: 0;
-	left: -300px;
-	-o-transition: all 0.3s linear 0s;
-	-webkit-transition: all 0.3s linear 0s;
-	-moz-transition: all 0.3s linear 0s;
-	-o-transition: all 0.3s linear 0s;
-	transition: all 0.3s linear 0s;
-}
-
-div.portfolio__cases:hover {
-	background: transparent;
-	z-index: 3000;
-}
-
-div.portfolio__cases:hover h4,
-div.portfolio__cases:hover a.btn {
-	left: 0px;
-	opacity: 1;
-	z-index: 3000;
-}
-
-div.portfolio__cases:hover .caption,
-div.portfolio__cases:hover p {
-	opacity: 1;
-	z-index: 3000;
-}                  
-
-div.portfolio__cases:hover object{
-	opacity: 0;
-	
-} 
-
- .portfolio-icon {
- 	display: block;
+.carousel-inner > .item {    
 }
 
 /*================================================================================================ 
