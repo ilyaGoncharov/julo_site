@@ -29,7 +29,7 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">  
 	<link rel="stylesheet" type="text/css" href="stylesheets/global.css" media="screen"> 
 	<link rel="stylesheet" type="text/css" href="stylesheets/portfolio.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="stylesheets/queries.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="stylesheets/portfolio_queries.css" media="screen">
 
 
 	<!-- <link rel="icon" type="image/png" href="http:// ./img/favicon-16x16.png" sizes="16x16"/>
@@ -54,13 +54,11 @@
 <body>
 
 	<!-- The overlay -->
-	<div id="form" class="overlay">
+	<div id="form" class=" overlay">
 		<!-- Overlay content -->
-		<div class="overlay-content">
+		<div class="col-xs-12 col-md-7 overlay-content">
 			<form id="contactform">
-				<h4>Напишите нам письмо</h4>
-				<p class="fillinput">Заполните пожалуйста все поля</p>
-				<a class="closebtn" onclick="show(form)">&times;</a>
+				<h4>Контакты</h4>
 		   		<div class="form-group">
 				    <input type="text"  class="form-control" id="ffname" name="Имя" placeholder="Имя">
 				    <input type="text"  class="form-control" id="ffcorp" name="Ответить" placeholder="Компания">
@@ -69,11 +67,16 @@
 				    <input type="text" name="_gotcha" style="display:none">
 				    <input type="hidden" name="_cc" value="karnebero@gmail.com">
 			    </div>
+			    <p class="fillinput">Заполните пожалуйста все поля</p>
 				<button type="submit" class="btn btn-default butt">Отправить</button>
 				<br>
-				
 			</form>
 		</div>
+		<div class="col-md-5 contacts">
+			<h5 class="head">Наш телефон : +7 (499) 390 60 61</h5>
+			<h5 class="head">Наш Email : <a href="mailto:info@startjulo.ru?subject=feedback" "email me">info@startjulo.ru</a></h5>
+		</div>
+		<a class="closebtn" onclick="show(form)">&times;</a>
 	</div>
 
 	<div class="wrapper">
@@ -106,19 +109,23 @@
 					<div class="col-sm-12 portfolio__cases pad_rM pad_lM">
 						<div id="carouselImg" class="carousel slide" data-ride="carousel">
 							<div class="carousel-inner" role="listbox">
+
 								<!-- move to caption blcok -->
 								<ol class="carousel-indicators">
 								    <li data-target="#carouselImg" data-slide-to="0" class="active"></li>
 								    <li data-target="#carouselImg" data-slide-to="1"></li>
 								    <li data-target="#carouselImg" data-slide-to="2"></li>
+								    <li data-target="#carouselImg" data-slide-to="3"></li>
+								    <li data-target="#carouselImg" data-slide-to="4"></li>
 								</ol>   
+
 								<div class="item active">
-									<div class="col-sm-7 portfolio__object--box img--box">
+									<div class="col-xs-12 col-md-7 portfolio__object--box img--box">
 										<a href="http://milyakov.com/" title="">
 											<img class="d-block img-fluid" src="stylesheets/pics/site1.png" alt=":(: missing slide, folks :):">
 										</a>
 									</div>
-									<div class="col-sm-5 portfolio__object--box text--box">
+									<div class="col-xs-12 col-md-5 portfolio__object--box text--box">
 								    	<div class="caption1">
 										    <p> 
 										    	<div class="corpname">Anton Milyakov </div><br>
@@ -133,17 +140,19 @@
 											<br>	
 											<br>
 											<br>	
+											<br>	
 											<a href="http://milyakov.com/">http://milyakov.com/</a>		
 										</div>
 									</div>
 								</div>
+
 								<div class="item">
-									<div class="col-sm-7 portfolio__object--box img--box">
+									<div class="col-xs-12 col-md-7 portfolio__object--box img--box">
 										<a href="http://texnokor.com/" title="">
 											<img class="d-block img-fluid" src="stylesheets/pics/site2.png" alt=":(: missing slide, folks :):">
 										</a>
 									</div>
-									<div class="col-sm-5 portfolio__object--box text--box">
+									<div class="col-xs-12 col-md-5 portfolio__object--box text--box">
 								    	<div class="caption1">
 										   <p> 
 										    	<div class="corpname">НПО "Технокор"</div><br>
@@ -159,17 +168,19 @@
 											<br>	
 											<br>	
 											<br>
+											<br>
 											<a href="http://texnokor.com/">http://texnokor.com/</a>		
 										</div>
 									</div>
 								</div>
+
 								<div class="item">
-									<div class="col-sm-7 portfolio__object--box img--box">
+									<div class="col-xs-12 col-md-7 portfolio__object--box img--box">
 										<a href="http://tcm-llc.ru/" title="">
 											<img class="d-block img-fluid" src="stylesheets/pics/site3.png" alt=":(: missing slide, folks :):">
 										</a>
 									</div>
-									<div class="col-sm-5 portfolio__object--box text--box">
+									<div class="col-xs-12 col-md-5 portfolio__object--box text--box">
 								    	<div class="caption1">
 										    <p> 
 										    	<div class="corpname">ООО "ТСМ" </div><br>
@@ -184,50 +195,78 @@
 											<br>	
 											<br>	
 											<br>	
+											<br>	
 											<a href="http://tcm-llc.ru/">http://tcm-llc.ru/</a>		
 										</div>
 									</div>
 								</div>
+
+								<div class="item">
+									<div class="col-xs-12 col-md-7 portfolio__object--box img--box">
+										<a href="http://www.snab-service.com/" title="">
+											<img class="d-block img-fluid" src="stylesheets/pics/site4.png" alt=":(: missing slide, folks :):">
+										</a>
+									</div>
+									<div class="col-xs-12 col-md-5 portfolio__object--box text--box">
+								    	<div class="caption1">
+										    <p> 
+										    	<div class="corpname">ООО “СнабСервис”</div>
+										    	<br>
+										    	Торговля ломом черных металлов в крупных масштабах по всей России.
+											</p>	
+											<br>
+											<br>
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/browser-4.svg" alt="icon0"><br><br></div>
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/keyboard.svg" alt="icon0"><br><br></div>
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/mouse.svg" alt="icon0"><br><br></div>	
+											<br>	
+											<br>	
+											<br>	
+											<br>	
+											<a href="http://www.snab-service.com/">http://www.snab-service.com/</a>		
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="col-xs-12 col-md-7 portfolio__object--box img--box">
+										<a href="http://san-termik.ru/" title="">
+											<img class="d-block img-fluid" src="stylesheets/pics/site5.png" alt=":(: missing slide, folks :):">
+										</a>
+									</div>
+									<div class="col-xs-12 col-md-5 portfolio__object--box text--box">
+								    	<div class="caption1">
+										    <p> 
+										    	<div class="corpname">ООО "ДЖЕНЕРАЛ ТЕРМИК"</div>
+										    	<br>
+										    	Магазин инженерной сантехники.
+											</p>	
+											<br>
+											<br>
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/browser-4.svg" alt="icon0"><br><br></div>
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/keyboard.svg" alt="icon0"><br><br></div>
+											<div class="col-sm-2 icon"><img src="stylesheets/pics/mouse.svg" alt="icon0"><br><br></div>	
+											<br>	
+											<br>	
+											<br>	
+											<br>	
+											<a href="http://san-termik.ru/">http://san-termik.ru/</a>		
+										</div>
+									</div>
+								</div>
+
 							</div>
 						</div>
 					</div>
-
-					<!-- <div class="col-sm-7 portfolio__cases pad_lM">
-					    <div class="portfolio__object--box img--box">
-							<a href="http://milyakov.com/" title="">
-								<img src="stylesheets/pics/site1.png" alt=":'(">
-							</a>
-						</div>
-					</div> -->
-
-					<!-- <div class="col-sm-5 portfolio__cases pad_rM pad_lM ">
-					    <div class="portfolio__object--box text--box">
-					    	<div class="caption1">
-							    <p> 
-							    	Anton Milyakov <br>
-							    	Ведущий мероприятий в Москве и не только. От маленьких и уютных до больших и роскошных.
-								</p>	
-								<br>
-								<div class="col-sm-2 icon"><img src="stylesheets/pics/transform.svg" alt="icon0"><br><br></div>
-								<div class="col-sm-2 icon"><img src="stylesheets/pics/browser-4.svg" alt="icon0"><br><br></div>
-								<div class="col-sm-2 icon"><img src="stylesheets/pics/keyboard.svg" alt="icon0"><br><br></div>
-								<div class="col-sm-2 icon"><img src="stylesheets/pics/mouse.svg" alt="icon0"><br><br></div>	
-								<br>	
-								<br>	
-								<a href="http://milyakov.com/">http://milyakov.com/</a>							
-							</div>
-						</div>
-					</div> -->
-
 				</div>
 			</section>
 			<section class="container-fluid icon__bar p_c2">
-				<div class="col-sm-2 icon"><img src="stylesheets/pics/transform.svg" alt=""><br><br>Логотип</div>
-				<div class="col-sm-2 icon"><img src="stylesheets/pics/browser-4.svg" alt=""><br><br>Дизайн</div>
-				<div class="col-sm-2 icon"><img src="stylesheets/pics/keyboard.svg" alt=""><br><br>Верстка</div>
-				<div class="col-sm-2 icon"><img src="stylesheets/pics/floppy-disk.svg" alt=""><br><br>Базы Данных</div>
-				<div class="col-sm-2 icon"><img src="stylesheets/pics/mouse.svg" alt=""><br><br>Продвижение</div>
-				<div class="col-sm-2 icon"><img src="stylesheets/pics/imac.svg" alt=""><br><br>Поддержка</div>
+				<div class="col-xs-4 col-sm-4 col-md-2 icon"><img src="stylesheets/pics/transform.svg" alt=""><br><br>Логотип</div>
+				<div class="col-xs-4 col-sm-4 col-md-2 icon"><img src="stylesheets/pics/browser-4.svg" alt=""><br><br>Дизайн</div>
+				<div class="col-xs-4 col-sm-4 col-md-2 icon"><img src="stylesheets/pics/keyboard.svg" alt=""><br><br>Разработка</div>
+				<div class="col-xs-4 col-sm-4 col-md-2 icon"><img src="stylesheets/pics/floppy-disk.svg" alt=""><br><br>Базы Данных</div>
+				<div class="col-xs-4 col-sm-4 col-md-2 icon"><img src="stylesheets/pics/mouse.svg" alt=""><br><br>Продвижение</div>
+				<div class="col-xs-4 col-sm-4 col-md-2 icon"><img src="stylesheets/pics/imac.svg" alt=""><br><br>Поддержка</div>
 			</section>
 		</div>		
 	</div>

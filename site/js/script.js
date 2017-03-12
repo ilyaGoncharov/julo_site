@@ -7,8 +7,11 @@ function show(form) {
     form.style.zIndex= "5";
     form.style.opacity = "1";
 
-    bckg.style.filter = "blur(12px)";
-    bckg.style.filter = "blur(12px)";
+    bckg.style.filter = "blur(18px)";
+    bckg.style.filter = "blur(18px) | opacity(.5)";
+    bckg.style.pointerEvents = "none";
+
+
 
     status = 1;
   } else {
@@ -17,6 +20,7 @@ function show(form) {
 
   	bckg.style.filter = "blur(0px)";
     bckg.style.filter = "blur(0px)";
+    bckg.style.pointerEvents = "initial";
 
   	status = 0;
   } 

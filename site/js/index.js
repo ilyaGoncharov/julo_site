@@ -144,7 +144,7 @@ Letter.prototype.render = function( char ) {
   }
 };
 
-var word = [ "WEB-РАЗРАБОТКА", "ПРОДВИЖЕНИЕ", "ЛОГОТИП", "ДИЗАЙН", "JULO" ];
+var word = [ "MOBILE-РАЗРАБО Т К А", "WEB-РАЗРАБОТКА", "ПРОДВИЖЕНИЕ", "ДИЗАЙН", "JULO" ];
 var nextWord = 0;
 var letters = new Letters();
 

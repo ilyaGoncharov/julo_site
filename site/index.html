@@ -65,25 +65,32 @@
 	</head>
 	<body>
 
-		<div id="form" class="overlay">
-			<div class="overlay-content">
-				<form id="contactform">
-					<h4>Напишите нам письмо</h4>
-					<p class="fillinput">Заполните пожалуйста все поля</p>
-					<a class="closebtn" onclick="show(form)">&times;</a>
-			   		<div class="form-group">
-					    <input type="text"  class="form-control" id="ffname" name="Имя" placeholder="Имя">
-					    <input type="text"  class="form-control" id="ffcorp" name="Ответить" placeholder="Компания">
-						<input type="email" class="form-control" id="ffmail" name="E-mail" placeholder="E-mail">
-					    <textarea class="form-control" rows="18" id="fftext" name="Текст сообщения" placeholder="Текст письма"></textarea>
-					    <input type="text" name="_gotcha" style="display:none">
-					    <input type="hidden" name="_cc" value="karnebero@gmail.com">
-				    </div>
-					<button type="submit" class="btn btn-default butt">Отправить</button>
-					<br>
-				</form>
-			</div>
+		<!-- The overlay -->
+		<div id="form" class=" overlay">
+		<!-- Overlay content -->
+		<div class="col-xs-12 col-md-7 overlay-content">
+			<form id="contactform">
+				<h4>Контакты</h4>
+		   		<div class="form-group">
+				    <input type="text"  class="form-control" id="ffname" name="Имя" placeholder="Имя">
+				    <input type="text"  class="form-control" id="ffcorp" name="Ответить" placeholder="Компания">
+					<input type="email" class="form-control" id="ffmail" name="E-mail" placeholder="E-mail">
+				    <textarea class="form-control" rows="18" id="fftext" name="Текст сообщения" placeholder="Текст письма"></textarea>
+				    <input type="text" name="_gotcha" style="display:none">
+				    <input type="hidden" name="_cc" value="karnebero@gmail.com">
+			    </div>
+			    <p class="fillinput">Заполните пожалуйста все поля</p>
+				<button type="submit" class="btn btn-default butt">Отправить</button>
+				<br>
+			</form>
 		</div>
+			<div class="col-md-5 contacts">
+				<h5 class="head">Наш телефон : +7 (499) 390 60 61</h5>
+				<h5 class="head">Наш Email : <a href="mailto:info@startjulo.ru?subject=feedback" "email me">info@startjulo.ru</a></h5>
+			</div>
+			<a class="closebtn" onclick="show(form)">&times;</a>
+		</div>
+
 
 		<div class="wrapper">
 			<div id="inner__wrapper" class="inner__wrapper">
