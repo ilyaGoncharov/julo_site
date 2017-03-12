@@ -1,5 +1,5 @@
 $('.carousel').carousel({
-  interval: 8000,
+  interval: 12000,
   pause: 'hover',
   wrap: true,
 });
