@@ -54,7 +54,7 @@ html, body {
 	-o-animation: AnimationName 30s ease infinite;
 	animation: AnimationName 30s ease infinite;
 	
-	font-family: "pixel_2";
+	font-family: "pixel_3";
 	font-size: 16px;
 
 	overflow-x: hidden;
@@ -317,7 +317,7 @@ ul {
 	width: 41px;
 	height: 41px;
 	right: 44px;
-	top: -64px;
+	top: -68px;
 	color: white;
 	cursor: pointer;
 }

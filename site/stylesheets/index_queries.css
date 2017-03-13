@@ -356,7 +356,9 @@ and (max-device-width : 1366px) {
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
 
-
+  .icon__bar {
+    margin-top: 50px;
+  }
 
 }
 
