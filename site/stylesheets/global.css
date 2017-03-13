@@ -286,6 +286,7 @@ ul {
 #form h4 {
 	position: absolute;
 	top: -70px;
+	left: 10px;
 	font-family: pixel_1;
 	font-size: 3.4rem;
 	margin: 0px;

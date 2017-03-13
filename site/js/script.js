@@ -1,6 +1,7 @@
-var status = 0;
-var word = document.getElementById('form');
-var bckg = document.getElementById('inner__wrapper');
+  var status = 0;
+  var word = document.getElementById('form');
+  var bckg = document.getElementById('inner__wrapper');
+  var formInit = document.getElementById('form');
 
 function show(form) {
   if (status == 0) {
@@ -10,7 +11,7 @@ function show(form) {
     bckg.style.filter = "blur(18px)";
     bckg.style.filter = "blur(18px) | opacity(.5)";
     bckg.style.pointerEvents = "none";
-
+    formInit.style.display = "block";
 
 
     status = 1;
@@ -21,6 +22,7 @@ function show(form) {
   	bckg.style.filter = "blur(0px)";
     bckg.style.filter = "blur(0px)";
     bckg.style.pointerEvents = "initial";
+    formInit.style.display = "none";
 
   	status = 0;
   } 

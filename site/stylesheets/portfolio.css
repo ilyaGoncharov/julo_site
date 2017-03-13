@@ -48,8 +48,19 @@ div.portfolio__rirst--row div {
 =================================================================================================*/
 
 .portfolio__second--row {
-	margin-top: 0px;
+
 }
+
+.p_c2 {
+	margin-bottom: 10px;
+	/* position: absolute;
+	bottom: 30px; */
+} 
+
+.p_c2 .portfolio__object--box {
+	border: none; 
+} 
+
 
 .icon__bar {
     font-size: 0.7rem;
@@ -112,10 +123,6 @@ div.portfolio__cases {
 .pad_rM {
 	padding-right: 0px;
 }
-
-.p_c2 {
-	margin-top: 60px;
-} 
 
 div.portfolio__object--box {
 	border: 2px solid white;
@@ -192,10 +199,6 @@ div.portfolio__object--box .caption1 {
 div.portfolio__object--box .caption1 h4 {
 	margin: 0px;
 }
-
-.p_c2 .portfolio__object--box {
-	border: none; 
-} 
 
 .text--box {
 	border: none !important;

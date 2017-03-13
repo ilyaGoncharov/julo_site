@@ -1,5 +1,4 @@
 /* index queries!!!
-
   .main__row #word {
     font-size: 2rem;
     bottom: 0px;
@@ -44,7 +43,14 @@
   }
 
   #form {
+    display: none;
     position: relative;
+  }
+
+  #form h4 {
+    position: relative;
+    top: 0px;
+    left: -4px;
   }
 
   #contactform button.butt {
@@ -60,6 +66,9 @@
     padding-left: 0px;
   }
 
+  .closebtn {
+    left: 15px;
+  }
 
 
 }
@@ -103,6 +112,7 @@
   }
 
   #form {
+    display: none;
     position: relative;
   }
 
@@ -124,13 +134,14 @@
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
+@media only screen and (min-width : 320px) {
   body {
     overflow-y: initial;
   }
 
-
 }
+
+
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -165,45 +176,10 @@
     margin-top: 20px;
   }
 
-}
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-
-
-
-}
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-
-
-
-}
-
-/**********
-iPad 3
-**********/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-
-
-
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-
-
-
-}
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-
-
-
-}
-
-/* Large screens ----------- */
-@media only screen  and (min-width : 1824px) {
+  .closebtn {
+    top: -68px;
+    left: 0px;
+  }
 
 
 
@@ -225,6 +201,69 @@ iPad 3
 /* iPhone 5 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
 
+    body {
+    overflow-y: initial;
+  }
+
+  .logo--container {
+    height: 2rem;
+    float: left;
+    position: fixed;
+  }
+
+  div.portfolio__rirst--row p {
+    display: none;
+  }
+
+  #inner__wrapper > section.up__row > div.logo.logo--container {
+    position: absolute;
+  }
+
+  #inner__wrapper > section.up__row > div.main__menu1 > ul {
+    position: absolute;
+    right: -15px;
+  }
+
+  .caption1 {
+    margin-top: 50px;
+    padding: 0px;
+  }
+
+  #inner__wrapper > section.container-fluid.icon__bar.p_c2 {
+    font-size: 0.5rem;
+  }
+
+  .p_c2 {
+    margin-top: 30px;
+  }
+
+  #form {
+    display: none;
+    position: relative;
+  }
+
+  #form h4 {
+    font-size: 3rem;
+    left: 15px;
+  }
+
+  #contactform button.butt {
+    width: 100%;
+    height: 50px;
+  }
+
+  .contacts {
+    top: 50px;
+  }
+
+  .head {
+    padding-left: 0px;
+  }
+
+  .closebtn {
+    top: -69px;
+  }
+
 
 
 }
@@ -243,8 +282,9 @@ iPad 3
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-
-
+  #form h4 {
+    font-size: 4rem;
+  }
 
 }
 
@@ -256,6 +296,72 @@ iPad 3
 }
 
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+   .closebtn {
+    top: -68px;
+    left: inherit;
+    right: 30px !important;
+  }
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+  body {
+    overflow-y: hidden;
+  }
+
+  .closebtn {
+    top: -68px;
+    left: inherit;
+    right: 45px !important;
+  }
+
+  .contacts p {
+    margin-top: 150px;
+  }
+
+
+}
+
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+
+
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+
+
+
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) { 
+  .contacts h5 {
+    margin-top: 400px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
 
 
 
@@ -295,7 +401,5 @@ iPad 3
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-
-
 
 }
