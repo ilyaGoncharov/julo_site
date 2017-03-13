@@ -348,8 +348,8 @@ iPad 3
 @media only screen 
 and (min-device-width : 1024px) 
 and (max-device-width : 1366px) { 
-  .contacts h5 {
-    margin-top: 400px;
+  .icon__bar {
+    margin-top: 60px;
   }
 }
 
