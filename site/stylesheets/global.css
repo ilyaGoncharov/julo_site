@@ -2,7 +2,7 @@
 .: LICENSES :. 
 ===============================================================================================*/
 
-/* Theme name: Julo | Author: Makarov Arseniy & I'llgo | Author URL: # */
+/* Theme name: Julo-digital | Author: Makarov Arseniy & Ilya Goncharov | Author URL: # */
 
 /*================================================================================================ 
 .: GLOBAL :. 
@@ -236,19 +236,11 @@ ul {
 .: CONTACT FORM :.
 =================================================================================================*/
 
-
-.fade-out {
-    /* opacity: 0; */
-
-    transition: none;
-}
-
 #form {
 	position: absolute;
 	font-size: 0.5rem;
 	letter-spacing: 0.5px;
 	top: 100px;
-	
 	width: 100%;
 	margin-left: 10px;
 	padding-right: 30px;
