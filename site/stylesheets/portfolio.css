@@ -48,7 +48,7 @@ div.portfolio__rirst--row div {
 =================================================================================================*/
 
 .portfolio__second--row {
-
+	margin-top: 15px;
 }
 
 .p_c2 {
@@ -125,7 +125,7 @@ div.portfolio__cases {
 }
 
 div.portfolio__object--box {
-	border: 2px solid white;
+	border: 1px solid white;
 	color: white;
 	font-size: 0.7rem;
 	letter-spacing: 0.5px;
@@ -166,14 +166,18 @@ div.portfolio__object--box p {
 }
 
 .carousel-indicators {
+
 	bottom: 0;
 	left: initial;
 	width: auto;
 	right: 0px;
 	top: 0px;
+	background: #100619;
+	height: 100%;
 }
 
 .carousel-indicators li {
+
 	display: block;
 	width: 18px;
 	height: 18px;

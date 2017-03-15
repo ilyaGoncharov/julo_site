@@ -170,6 +170,7 @@ setTimeout( function() {
         };*/
     
     letters.start( word[ nextWord ] );
+    
   }, 10000);
   
 }, 1000);

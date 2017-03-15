@@ -1,18 +1,16 @@
   var status = 0;
   var word = document.getElementById('form');
   var bckg = document.getElementById('inner__wrapper');
-  var formInit = document.getElementById('form');
+  var images = document.getElementsByName('img--box'); 
 
 function show(form) {
   if (status == 0) {
     form.style.zIndex= "5";
     form.style.opacity = "1";
-
     bckg.style.filter = "blur(18px)";
-    bckg.style.filter = "blur(18px) | opacity(.5)";
+    bckg.style.filter = "blur(18px)";
     bckg.style.pointerEvents = "none";
-    formInit.style.display = "block";
-
+    bckg.style.display = "none";
 
     status = 1;
   } else {
@@ -22,7 +20,7 @@ function show(form) {
   	bckg.style.filter = "blur(0px)";
     bckg.style.filter = "blur(0px)";
     bckg.style.pointerEvents = "initial";
-    formInit.style.display = "none";
+    bckg.style.display = "block";
 
   	status = 0;
   } 

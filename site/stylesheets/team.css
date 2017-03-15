@@ -1,0 +1,97 @@
+
+
+/*================================================================================================ 
+.: TEAM GLOBAL :. 
+=================================================================================================*/
+
+
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+section, div {
+  padding-left: 0px !important;
+
+}
+
+body {
+  height: auto;
+}
+
+
+/*================================================================================================ 
+.:. 
+=================================================================================================*/
+
+/*================================================================================================ 
+.: TEAM FIRST ROW :. 
+=================================================================================================*/
+
+.up__row {
+  height: 65px;
+}
+
+div.team__rirst--row {
+  font-family: pixel_1;
+  font-size: 3.4rem;
+  color: white;
+  position: absolute;
+  left: 90px;
+  top: -12px;
+}
+
+div.team__rirst--row div {
+  padding: 0px;
+}
+
+/*================================================================================================ 
+.:. 
+=================================================================================================*/
+
+
+/*================================================================================================ 
+.: TEAM MAIN ROW :. 
+=================================================================================================*/
+
+
+.team__main--row {
+
+  margin-left: 15px;
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+}
+
+.team__main--row .row {
+  margin-top: 30px;
+}
+
+.img--box {
+  width: 100%;
+  filter: alpha(opacity=50);
+  opacity: .6;
+  border: 1px white solid;
+  -webkit-transition: opacity 200ms ease-out 0s;
+  -moz-transition: opacity 200ms ease-out 0s;
+  -o-transition: opacity 200ms ease-out 0s;
+  transition: opacity 200ms ease-out 0s;
+}
+
+.img--box:hover {
+  opacity: .9;
+  background-color: transparent;
+  -webkit-transition: opacity 200ms ease-out 0s;
+    -moz-transition: opacity 200ms ease-out 0s;
+    -o-transition: opacity 200ms ease-out 0s;
+    transition: opacity 200ms ease-out 0s;
+}
+
+.team__main--row h5,
+.team__main--row p {
+  margin-left: 20px;
+}
+
+
+/*================================================================================================ 
+.:. 
+=================================================================================================*/
