@@ -1,9 +1,3 @@
-/* index queries!!!
-  .main__row #word {
-    font-size: 2rem;
-    bottom: 0px;
-  } */
-
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 319px) and (max-device-width : 479px) {
   body {
@@ -30,6 +24,8 @@
   }
 
   .caption1 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
     margin-top: 50px;
     padding: 0px;
   }
@@ -68,6 +64,10 @@
 
   .closebtn {
     left: 15px;
+  }
+
+  .carousel-indicators {
+    background-color: transparent;
   }
 
 
@@ -112,7 +112,7 @@
   }
 
   #form {
-    display: none;
+    
     position: relative;
   }
 
@@ -238,7 +238,7 @@
   }
 
   #form {
-    display: none;
+ 
     position: relative;
   }
 

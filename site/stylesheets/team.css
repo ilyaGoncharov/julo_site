@@ -61,32 +61,36 @@ div.team__rirst--row div {
 }
 
 .team__main--row .row {
-  margin-bottom: 60px; 
+  margin-bottom: 20px; 
 }
 
 .img--box {
   width: 100%;
-  filter: alpha(opacity=50);
-  opacity: .6;
+  filter: alpha(opacity=70);
+  opacity: .7;
   border: 1px white solid;
   -webkit-transition: opacity 200ms ease-out 0s;
   -moz-transition: opacity 200ms ease-out 0s;
   -o-transition: opacity 200ms ease-out 0s;
   transition: opacity 200ms ease-out 0s;
+  margin-right: 30px;
+}
+
+.marg {
+  right: -15px;
 }
 
 .img--box:hover {
   opacity: .9;
   background-color: transparent;
   -webkit-transition: opacity 200ms ease-out 0s;
-    -moz-transition: opacity 200ms ease-out 0s;
-    -o-transition: opacity 200ms ease-out 0s;
-    transition: opacity 200ms ease-out 0s;
+  -moz-transition: opacity 200ms ease-out 0s;
+  -o-transition: opacity 200ms ease-out 0s;
+  transition: opacity 200ms ease-out 0s;
 }
 
 .team__main--row h5,
 .team__main--row p {
-  margin-left: 20px;
 }
 
 
